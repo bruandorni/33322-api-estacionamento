@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>API de Estacionamento (v1)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>API de Estacionamento</h1>
+  </header>
+  <main>
+    <!-- Registrar Entrada -->
+    <section id="entry-vehicle">
+      <h2>Registrar Entrada</h2>
+      <form id="entry-form">
+        <label for="plate-entry">Placa:</label>
+        <input type="text" id="plate-entry" placeholder="ABC-1234" required>
+        <button type="submit">Registrar Entrada</button>
+      </form>
+      <pre id="entry-result"></pre>
+    </section>
+
+    <!-- Registrar Saída -->
+    <section id="exit-vehicle">
+      <h2>Registrar Saída</h2>
+      <form id="exit-form">
+        <label for="plate-exit">Placa:</label>
+        <input type="text" id="plate-exit" placeholder="ABC-1234" required>
+        <button type="submit">Registrar Saída</button>
+      </form>
+      <pre id="exit-result"></pre>
+    </section>
+
+    <!-- Verificar Veículo -->
+    <section id="check-vehicle">
+      <h2>Verificar Presença</h2>
+      <form id="check-form">
+        <label for="plate-check">Placa:</label>
+        <input type="text" id="plate-check" placeholder="ABC-1234" required>
+        <button type="submit">Verificar</button>
+      </form>
+      <pre id="check-result"></pre>
+    </section>
+
+    <!-- Cancelar Registro -->
+    <section id="cancel-vehicle">
+      <h2>Cancelar Registro</h2>
+      <form id="cancel-form">
+        <label for="plate-cancel">Placa:</label>
+        <input type="text" id="plate-cancel" placeholder="ABC-1234" required>
+        <button type="submit">Cancelar Registro</button>
+      </form>
+      <pre id="cancel-result"></pre>
+    </section>
+
+    <!-- Consultar tempo de permanência -->
+    <section id="time">
+      <h2>Tempo de Permanência</h2>
+      <form id="time-form">
+        <label for="plate-time">Placa:</label>
+        <input type="text" id="plate-time" placeholder="ABC-1234" required>
+        <button type="submit">Consultar Tempo</button>
+      </form>
+      <pre id="time-result"></pre>
+    </section>
+
+    <!-- Atualizar Dados do Veículo -->
+    <section id="update-vehicle">
+      <h2>Atualizar Dados</h2>
+      <form id="update-form">
+        <label for="plate-update">Placa:</label>
+        <input type="text" id="plate-update" placeholder="ABC-1234" required>
+        <label for="new-data">Novos Dados (JSON):</label>
+        <textarea id="new-data" rows="4" placeholder='{"key": "value"}' required></textarea>
+        <button type="submit">Atualizar Dados</button>
+      </form>
+      <pre id="update-result"></pre>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
